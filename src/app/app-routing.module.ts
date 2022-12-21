@@ -1,15 +1,23 @@
 import { NgModule } from '@angular/core';
+
 import { RouterModule, Routes } from '@angular/router';
+
+import { HomeComponent } from './components/home/home.component';
 import { AlbumComponent } from './components/album/album.component';
-import { LibraryComponent } from './components/library/library.component';
 import { MusicComponent } from './components/music/music.component';
-import { SupportComponent } from './components/support/support.component';
+import { RatingComponent } from './components/rating/rating.component';
+import { LibraryComponent } from './components/library/library.component';
+import { FromeventComponent } from './components/fromevent/fromevent.component';
+import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
 
 const routes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'album', component: AlbumComponent },
-  { path: 'library', component: LibraryComponent },
   { path: 'music', component: MusicComponent },
-  { path: 'support', component: SupportComponent },
+  { path: 'rating', component: RatingComponent },
+  { path: 'library', component: LibraryComponent },
+  { path: 'fromevent', component: FromeventComponent },
+  { path: 'autocomplete', component: AutocompleteComponent },
 ];
 
 @NgModule({

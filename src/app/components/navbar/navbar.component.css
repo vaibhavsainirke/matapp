@@ -1,5 +1,7 @@
 .navbar{
     justify-content: space-between;
+    background-image: linear-gradient(to right,rgba(2, 18, 104, 0.733),rgba(32, 8, 41, 0.26));
+    font-size: 0.8rem;
 }
 .nav-item{
     padding-left: 2rem;

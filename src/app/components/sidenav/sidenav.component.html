@@ -1,0 +1,38 @@
+<mat-nav-list class="text-white sidenav">
+  <div>
+    <img
+      class="logo img-fluid"
+      src="../../../assets/images/vaibhav.jpg"
+      alt=""
+    />
+  </div>
+  <div class="text-center">Profile</div>
+  <mat-divider></mat-divider>
+  <h2 class="mt-3">APPLICATION</h2>
+
+  <a mat-list-item routerLink="/home" routerLinkActive="list-item-active">
+    <span class="icon-sidenav"><mat-icon>home</mat-icon></span
+    ><span class="color-gray">Home</span>
+  </a>
+  <a mat-list-item routerLink="/album"
+    ><span class="icon-sidenav"><mat-icon>album</mat-icon></span
+    ><span class="color-gray">Album</span></a
+  >
+  <a mat-list-item routerLink="/library">
+    <span class="icon-sidenav"><mat-icon>photo</mat-icon></span
+    ><span class="color-gray">Library</span>
+  </a>
+  <a mat-list-item routerLink="/music"
+    ><span class="icon-sidenav"><mat-icon>lyrics</mat-icon></span
+    ><span class="color-gray">Music</span></a
+  >
+  <a mat-list-item routerLink="/autocomplete">
+    <span class="icon-sidenav" ><mat-icon>style</mat-icon></span><span class="color-gray">AutoComplete</span>
+  </a>
+  <a mat-list-item routerLink="/fromevent">
+    <span class="color-gray" ><mat-icon>event</mat-icon>FromEvent</span>
+  </a>
+  <a mat-list-item routerLink="/rating">
+    <span class="color-gray" ><mat-icon>star</mat-icon>Rating</span>
+  </a>
+</mat-nav-list>

@@ -1,0 +1,10 @@
+mat-drawer-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.sidebar{
+    width: 13rem;
+    background-color:  rgba(7, 26, 133, 0.288);
+    height: 100%;
+}

@@ -1,2 +1,13 @@
-<navbar></navbar>
-<gridlist></gridlist>
+
+<mat-drawer-container>
+    <mat-drawer class="sidebar" mode="side" [opened]="sidebarOpen">
+        <sidenav></sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div>
+            <navbar (sidenavbartoggler)="toggleSidenav()"></navbar>
+        </div>
+        
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,25 @@
+<div class="countainer-fluid page">
+    <div class="page-heading mt-3 p-2">autocomplete</div>
+    <div class="page-body p-3 position-relative shadow">
+      <div class="page-contant position-absolute">
+       <h1>content</h1>
+
+       <form action="">
+            <mat-form-field appearance="fill" class="width-100">
+                <mat-label>{{lable}}</mat-label>            
+               <input matInput placeholder="" #inputBox (focus)="getInputVal(inputBox.value)" [matAutocomplete]="auto" [formControl]="myControl"  />
+
+               <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                    {{option}}
+                </mat-option>
+               </mat-autocomplete>
+
+            </mat-form-field>
+        </form>
+        <p>{{lable}}</p>
+        
+      </div>
+    </div>
+  </div>
+  

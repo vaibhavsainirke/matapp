@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { Component, EventEmitter, Output } from '@angular/core';
+
+import { LoginDilogComponent } from '../login-dilog/login-dilog.component';
+import { SignupDialogComponent } from '../signup-dialog/signup-dialog.component';
 
 @Component({
   selector: 'navbar',
@@ -6,5 +10,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+@Output() sidenavbartoggler: EventEmitter<any> = new EventEmitter();
 
+  constructor(public dialog:MatDialog, public signupbox: MatDialog ){}
+
+  openDialog(){
+    this.dialog.open(LoginDilogComponent);
+  }
+
+  openSignupDialog(){
+    this.signupbox.open(SignupDialogComponent);
+  }
+
+  sidenavToggler(){
+    this.sidenavbartoggler.emit();
+  }
 }
+

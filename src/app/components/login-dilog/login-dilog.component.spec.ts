@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GridlistComponent } from './gridlist.component';
+import { LoginDilogComponent } from './login-dilog.component';
 
-describe('GridlistComponent', () => {
-  let component: GridlistComponent;
-  let fixture: ComponentFixture<GridlistComponent>;
+describe('LoginDilogComponent', () => {
+  let component: LoginDilogComponent;
+  let fixture: ComponentFixture<LoginDilogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GridlistComponent ]
+      declarations: [ LoginDilogComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GridlistComponent);
+    fixture = TestBed.createComponent(LoginDilogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

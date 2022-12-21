@@ -1,0 +1,20 @@
+.page{
+    color: white;
+    background: #f1f5f9;
+}
+.page-heading{
+    background-image: linear-gradient(to right, rgba(32, 8, 41, 0.26),rgba(2, 18, 104, 0.733));
+    color: rgb(38, 43, 88);
+    min-height: 120px;
+    font-size: 2rem;
+}
+.page-body{
+    width: 93%;
+    margin: auto;
+    margin-top: -4rem;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    border-radius: 1rem;
+    min-height: calc(100vh - 170px);
+}

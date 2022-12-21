@@ -1,0 +1,37 @@
+.logo {
+  width: 5em;
+  height: 5rem;
+  border: 5px solid rgba(32, 8, 41, 0.26);
+  border-radius: 50%;
+  margin-left: 1rem;
+  transition: all 1s ease-in-out;
+}
+.logo:hover {
+  transform: rotate(1turn);
+  width: 11rem;
+  height: 11rem;
+}
+mat-icon {
+  vertical-align: bottom;
+  padding-right: 30px;
+}
+mat-divider {
+  border-top-width: 2px;
+  border-color: azure;
+}
+
+.color-gray {
+  color: rgba(45, 55, 115, 0.733) ;
+  font-size: 0.9rem;
+}
+.color-gray:hover{
+    color: aliceblue;
+    border-bottom: 2px solid white;
+}
+.icon-sidenav{
+    color: rgb(58, 26, 141);
+}
+.icon-sidenav:hover {
+    color: rgb(227, 221, 243);
+}
+

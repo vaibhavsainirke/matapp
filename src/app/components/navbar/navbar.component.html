@@ -1,5 +1,10 @@
 <mat-toolbar color="primary" class="navbar">
-  <div>
+  <div class="">
+    <span>
+      <button mat-icon-button color="accent" (click)="sidenavToggler()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </span>
     <span>Brand</span>
   </div>
   <div>
@@ -15,13 +20,21 @@
       </button>
     </span>
     <span class="nav-btn">
-      <button style="background-color: rgb(175, 151, 202)" mat-raised-button>
-        sign up
+      <button
+        style="background-color: rgb(175, 151, 202)"
+        (click)="openSignupDialog()"
+        mat-raised-button
+      >
+        <a mat-list-item routerLink="/login">Signup</a>
       </button>
     </span>
     <span class="nav-btn">
-      <button style="background-color: rgb(175, 151, 202)" mat-raised-button>
-        Login
+      <button
+        style="background-color: rgb(175, 151, 202)"
+        (click)="openDialog()"
+        mat-raised-button
+      >
+        <a mat-list-item routerLink="/login">Login</a>
       </button>
     </span>
   </div>
