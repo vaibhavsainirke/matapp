@@ -1,20 +1,63 @@
-.page{
-    color: white;
-    background: #f1f5f9;
+* {
+  box-sizing: border-box;
 }
-.page-heading{
-    background-image: linear-gradient(to right, rgba(32, 8, 41, 0.26),rgba(2, 18, 104, 0.733));
-    color: rgb(38, 43, 88);
-    min-height: 120px;
-    font-size: 2rem;
+.page {
+  color: white;
+  background: #f1f5f9;
 }
-.page-body{
-    width: 93%;
-    margin: auto;
-    margin-top: -4rem;
-    background: white;
-    color: black;
-    font-size: 1rem;
-    border-radius: 1rem;
-    min-height: calc(100vh - 170px);
+.page-heading {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.26),
+    rgba(160, 34, 148, 0.733)
+  );
+  color: rgb(38, 43, 88);
+  min-height: 120px;
+  font-size: 2rem;
+}
+.page-body {
+  width: 93%;
+  margin: auto;
+  margin-top: -4rem;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  border-radius: 1rem;
+  min-height: calc(100vh - 170px);
+}
+.page-contant {
+  height: auto;
+}
+.chart-wrapper {
+  border-radius: 1rem;
+  background: rgb(214, 245, 205);
+}
+p {
+  background: rgba(145, 27, 199, 0.616);
+}
+.albums-data {
+  background: rgb(139, 113, 138);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  height: 90px;
+  display: grid;
+}
+.albums-btn {
+  background: rgb(203, 162, 204);
+}
+.albums-container {
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: rgb(247, 226, 247);
+  border-radius: 5px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(189, 58, 206);
 }

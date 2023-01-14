@@ -1,40 +1,49 @@
-<mat-toolbar color="primary" class="navbar">
-  <div class="">
+<mat-toolbar
+  class="navbar-color"
+  [ngClass]="{
+    bg1: color === 'color1',
+    bg2: color === 'color2',
+    bg3: color === 'color3',
+    bg4: color === 'color4',
+    bg5: color === 'color5',
+    bg6: color === 'color6',
+    bg7: color === 'color7',
+    bg8: color === 'color8',
+    bg9: color === 'color9',
+    bg10: color === 'color10',
+    bg11: color === 'color11',
+    bg12: color === 'color12',
+    bg13: color === 'color13'
+  }"
+>
+  <div>
     <span>
-      <button mat-icon-button color="accent" (click)="sidenavToggler()">
-        <mat-icon>menu</mat-icon>
+      <button class="btn toggle-btn" (click)="sidenavToggler()">
+        <i class="bi bi-list"></i>
       </button>
     </span>
-    <span>Brand</span>
+    <span class="brand">Brand</span>
   </div>
   <div>
-    <span class="nav-item"><a>Home</a> </span>
-    <span class="nav-item"><a>About</a></span>
-    <span class="nav-item"><a>Services</a> </span>
+    <span class="navbar-item "[ngClass]="{navlink: color=== 'color13'}"
+      ><a  routerLink="/home" routerLinkActive="list-item-active">
+        Home
+      </a></span
+    >
+    <span class="navbar-item" [ngClass]="{navlink: color=== 'color13'}" ><a  href="">About</a></span>
+    <span class="navbar-item" [ngClass]="{navlink: color=== 'color13'}" ><a  href="">Service</a></span>
+    <span class="navbar-item" [ngClass]="{navlink: color=== 'color13'}" ><a  href="">contact</a></span>
   </div>
-
+  <span class="example-spacer"></span>
   <div>
     <span class="nav-btn">
-      <button color="primary" mat-mini-fab>
-        <mat-icon>settings</mat-icon>
+      <button (click)="openSignupDialog()" class="btn btn-outline-secondary">
+        Signup
       </button>
     </span>
     <span class="nav-btn">
-      <button
-        style="background-color: rgb(175, 151, 202)"
-        (click)="openSignupDialog()"
-        mat-raised-button
-      >
-        <a mat-list-item routerLink="/login">Signup</a>
-      </button>
-    </span>
-    <span class="nav-btn">
-      <button
-        style="background-color: rgb(175, 151, 202)"
-        (click)="openDialog()"
-        mat-raised-button
-      >
-        <a mat-list-item routerLink="/login">Login</a>
+      <button (click)="openDialog()" class="btn btn-outline-secondary">
+        Login
       </button>
     </span>
   </div>

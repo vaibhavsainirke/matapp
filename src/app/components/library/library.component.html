@@ -1,8 +1,149 @@
-<div class="countainer-fluid page ">
-    <div class="page-heading mt-3 p-2">Library</div>
-    <div class="page-body p-3 position-relative shadow">
-        <div class="page-contant position-absolute">
-            library working
+<div class="countainer-fluid page">
+  <div class="page-heading mt-3 p-2">Library with local storage</div>
+  <div class="page-body p-3 shadow">
+    <div class="page-contant">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 mt-2">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-card-subtitle> Save Data to Storage</mat-card-subtitle>
+                <mat-card-title>storage</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <mat-form-field class="mx-1">
+                  <mat-label>Id</mat-label>
+                  <input matInput type="text" [(ngModel)]="id" />
+                </mat-form-field>
+                
+                <mat-form-field class="mx-1">
+                  <mat-label>Password</mat-label>
+                  <input matInput type="text" [(ngModel)]="value" />
+                </mat-form-field>
+                <mat-divider></mat-divider>
+              </mat-card-content>
+              <mat-card-actions>
+                <button
+                  class="text-white btn"
+                  style="background-color: rgba(97, 23, 132, 0.733)"
+                  (click)="addDataToLocalStroge()"
+                >
+                  Add local data
+                </button>
+                <button
+                  class="text-white btn mx-1"
+                  style="background-color: rgba(97, 23, 132, 0.733)"
+                  (click)="addDataToSessionStorage()"
+                >
+                  Add session data
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div class="col-6 mt-2">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-card-subtitle>Get Data From Storage</mat-card-subtitle>
+                <mat-card-title>storage</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <mat-form-field class="mx-1">
+                  <mat-label>Id for data</mat-label>
+                  <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="returnid"
+                  /> </mat-form-field
+                ><br />
+                <div>{{ returndata }}</div>
+                <mat-divider></mat-divider>
+              </mat-card-content>
+              <mat-card-actions>
+                <button
+                  class="text-white btn pt-2"
+                  style="background-color: rgba(97, 23, 132, 0.733)"
+                  (click)="getDataFromLocalStroage()"
+                >
+                  get local data
+                </button>
+                <button
+                  class="text-white btn mx-1"
+                  style="background-color: rgba(97, 23, 132, 0.733)"
+                  (click)="getDataFromSessionStroage()"
+                >
+                  get session data
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div class="col-6 mt-2">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-card-subtitle>Remove Data From Storage</mat-card-subtitle>
+                <mat-card-title>storage</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <mat-form-field class="mx-1">
+                  <mat-label>Id to remove data</mat-label>
+                  <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="removeId"
+                  /> </mat-form-field
+                ><br />
+                <mat-divider></mat-divider>
+              </mat-card-content>
+              <mat-card-actions>
+                <button
+                  class="text-white btn pt-2"
+                  style="background-color: rgba(97, 23, 132, 0.733)"
+                  (click)="removeDataFromLocalStroage()"
+                >
+                  Remove local data
+                </button>
+                <button
+                  class="text-white btn mx-1"
+                  style="background-color: rgba(97, 23, 132, 0.733)"
+                  (click)="removeDataFromSessionStroage()"
+                >
+                Remove session data
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div class="col-6 mt-2">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-card-subtitle>Clear Data From Storage</mat-card-subtitle>
+                <mat-card-title>storage</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <p class="mb-3">
+                    Click button to perform action(clear data from local storage by clicking on <strong>Clear local data</strong>  button
+                    or clear data from session storage on clicking of <strong>Clear session data</strong> button)
+                </p> 
+                <mat-divider></mat-divider>
+              </mat-card-content>
+              <mat-card-actions>
+                <button
+                  class="text-white btn pt-2"
+                  style="background-color: rgba(97, 23, 132, 0.733)"
+                  (click)="ClearDataFromLocalStroage()"
+                >
+                Clear local data
+                </button>
+                <button
+                  class="text-white btn mx-1"
+                  style="background-color: rgba(97, 23, 132, 0.733)"
+                  (click)="ClearDataFromSessionStroage()"
+                >
+                Clear session data
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

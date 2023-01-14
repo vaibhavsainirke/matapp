@@ -1,8 +1,18 @@
-<div class="countainer-fluid page ">
-    <div class="page-heading mt-3 p-2">Album</div>
-    <div class="page-body p-3 position-relative shadow">
-        <div class="page-contant position-absolute">
-            content goes here
+<div class="countainer-fluid page">
+  <div class="page-heading mt-3 p-2">Albums</div>
+  <div class="page-body p-3 position-relative shadow">
+    <div class="page-contant">
+      <button class="btn albums-btn mb-2" (click)="getAlbum()">click</button>
+      <div class="row">
+        <div class="albums-container col-6 scroll" *ngIf="albumsFound">
+          <div class="row justify-content-center">
+            <div class="albums-data col-11" *ngFor="let album of albums">
+              <div>ID: {{ album.id }}</div>
+              <div>Title: {{ album.title }}</div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

@@ -1,0 +1,23 @@
+.page{
+    color: white;
+    background: #f1f5f9;
+}
+.page-heading{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.26),rgba(33, 153, 157, 0.733));
+    color: rgb(38, 43, 88);
+    min-height: 120px;
+    font-size: 2rem;
+}
+.page-body{
+    width: 93%;
+    margin: auto;
+    margin-top: -4rem;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    border-radius: 1rem;
+    min-height: calc(100vh - 170px);
+}
+.page-contant{
+    background: rgb(247, 243, 243);
+}

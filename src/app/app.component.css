@@ -1,10 +1,22 @@
-mat-drawer-container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+mat-drawer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.sidebar{
-    width: 13rem;
-    background-color:  rgba(7, 26, 133, 0.288);
-    height: 100%;
+.sidebar {
+  width: 15rem;
+  background-image: linear-gradient(
+    to top,
+    rgb(142, 140, 140),
+    rgb(88, 83, 83)
+  );
+}
+.navbar {
+  background-color: white;
+  padding: 0px;
+  background-image: linear-gradient(
+    to left,
+    rgb(142, 140, 140),
+    rgb(88, 83, 83)
+  );
 }

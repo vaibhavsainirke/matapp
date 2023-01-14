@@ -8,10 +8,11 @@ import { from } from 'rxjs';
 })
 export class RatingComponent {
   fixedRating = 4;
-  ratingArray: number[] = [2, 5, 3, 4];
-
-  constructor() {}
-  ngOnInit(){
-    const source=from(this.ratingArray)
+  ratingArray: number[] = [2, 3, 1];
+  data2='';
+  constructor() {
+  }
+  getChange(event:any){
+  console.log(event.target.value)
   }
 }

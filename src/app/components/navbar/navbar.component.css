@@ -1,11 +1,141 @@
-.navbar{
-    justify-content: space-between;
-    background-image: linear-gradient(to right,rgba(2, 18, 104, 0.733),rgba(32, 8, 41, 0.26));
-    font-size: 0.8rem;
-}
 .nav-item{
     padding-left: 2rem;
 }
-.nav-btn{
-    padding-left: 1rem;
+.brand{
+    color: rgb(255, 255, 255);
+    margin-left: 1px;
+
 }
+.toggle-btn{
+    color: bisque;
+    font-size: 1.4rem;
+    margin:0;
+    padding: 0;
+} 
+.nav-btn{
+    margin-left: 5px;
+    height: 10px;
+}
+.nav-btn button{
+    font-size: small;
+}
+.navbar-item a{
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    text-decoration: none;
+}
+.navbar-item a:hover{
+    text-decoration: underline;
+    color: rgb(66, 64, 64);
+    font-weight: 400;
+}
+
+
+.navbar-color {
+    background-image: linear-gradient(
+      to left,
+      rgb(218, 215, 215),
+      rgb(88, 83, 83)
+    );
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+  }
+  .bg1 {
+    background-image: linear-gradient(
+      to left,
+      rgba(234, 95, 125, 0.26),
+      rgba(220, 71, 113, 0.733)
+    );
+  }
+  .bg2 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(160, 34, 148, 0.733)
+    );
+  }
+  .bg3 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(97, 23, 132, 0.733)
+    );
+  }
+  .bg4 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(75, 37, 183, 0.733)
+    );
+  }
+  .bg5 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(43, 82, 188, 0.733)
+    );
+  }
+  .bg6 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(42, 104, 149, 0.733)
+    );
+  }
+  .bg7 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(33, 153, 157, 0.733)
+    );
+  }
+  .bg8 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(59, 186, 112, 0.733)
+    );
+  }
+  .bg9 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(105, 220, 60, 0.733)
+    );
+  }
+  .bg10 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(129, 202, 202, 0.733)
+    );
+  }
+  .bg11 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgba(236, 217, 131, 0.733)
+    );
+  }
+  .bg12 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgb(230, 190, 182)
+    );
+  }
+  .bg13 {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.26),
+      rgb(20, 197, 94)
+    );
+  }
+  .navlink a{
+    color: rgb(99, 96, 96);
+    font-weight: 500;
+
+  }

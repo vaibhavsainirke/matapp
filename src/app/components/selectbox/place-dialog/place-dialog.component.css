@@ -1,0 +1,29 @@
+.Card div {
+  margin: 5px;
+  padding: 5px;
+  color: darkslategrey;
+}
+.rating {
+  color: rgb(231, 231, 47);
+  font-size: 1.5rem;
+  border: black;
+}
+.dialog-body {
+  overflow-y: scroll;
+
+  height: 70vh;
+  width: 50vw;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(122, 94, 94);
+}
+.close-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -3,7 +3,7 @@
     background: #f1f5f9;
 }
 .page-heading{
-    background-image: linear-gradient(to right, rgba(32, 8, 41, 0.26),rgba(2, 18, 104, 0.733));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.26),rgba(43, 82, 188, 0.733));
     color: rgb(38, 43, 88);
     min-height: 120px;
     font-size: 2rem;

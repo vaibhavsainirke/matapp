@@ -1,0 +1,39 @@
+
+<div class="container-fluid dialog-body">
+  <button  class="close-btn" mat-button mat-dialog-close>
+    <mat-icon style="color: rgb(56, 45, 45);">close</mat-icon>
+  </button>
+  <div class="row mt-4 justify-content-center">
+    <div class="col-12 width mb-3">
+      <mat-card class="Card">
+        <mat-card-content class="mt-2">
+          <div>
+            <strong>{{ placeForCard.name }} </strong>
+            <span class="rating">
+              <ngb-rating [max]="5" [rate]="placeForCard.rating"></ngb-rating>
+            </span>
+          </div>
+
+          <div>
+            {{ placeForCard.description }}
+          </div>
+          <mat-divider></mat-divider>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row justify-content-center mb-3">
+    <div class="col-8">
+      <div *ngFor="let image of imagesForCard">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-subtitle>{{ placeForCard.name }}</mat-card-subtitle>
+          </mat-card-header>
+          <a href="{{ image.url }}" target="_blank">
+            <img class="img-fluid card-img" src="{{ image.url }}" />
+          </a>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,22 +1,19 @@
-<div class="countainer-fluid page ">
-    <div class="page-heading mt-3 p-2">Rating</div>
-    <div class="page-body p-3 position-relative shadow">
-        <div class="page-contant ">
-            <div>
-              <ngb-rating [max]="5" [(rate)]="fixedRating"></ngb-rating>
-              <br><br><br>
-              <p>selected rating: {{fixedRating}}</p> 
-            </div>
-            <hr>
-            <div>
-
-                <div *ngFor="let item of ratingArray">
-                    <ngb-rating [max]="5" ></ngb-rating><br>
-                    <p>selected rating: </p> <br><br>
-                </div>
-           
-              </div>
+<div class="countainer-fluid page">
+  <div class="page-heading mt-3 p-2">Rating</div>
+  <div class="page-body p-3 position-relative shadow">
+    <div class="page-contant">
+      <div>
+        <ngb-rating [max]="5" [(rate)]="fixedRating"></ngb-rating>
+        <p>selected rating: {{ fixedRating }}</p>
+      </div>
+      <hr />
+      <div>
+        <div *ngFor="let rating of ratingArray; let idx = index">
+          <ngb-rating [max]="5" [(rate)]="ratingArray[idx]"></ngb-rating><br />
+          <p>selected rating: {{ rating }}</p>
+          <br /><br />
         </div>
+      </div>
     </div>
+  </div>
 </div>
-

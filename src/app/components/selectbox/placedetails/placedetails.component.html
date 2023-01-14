@@ -1,0 +1,49 @@
+<div class="countainer-fluid page">
+  <div class="page-heading mt-3 p-2">Place Details</div>
+  <div class="page-body p-3 shadow">
+    <div class="page-contant">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 mb-3">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-card-subtitle>{{ placeForCard.name }}</mat-card-subtitle>
+                <mat-divider></mat-divider>
+              </mat-card-header>
+              <mat-card-content class="mt-2">
+                <div><strong>Place Name:</strong> {{ placeForCard.name }}</div>
+                <div class="rating">
+                  <p>
+                    <strong> Rating: </strong>
+
+                    <ngb-rating
+                      [max]="5"
+                      [rate]="placeForCard.rating"
+                    ></ngb-rating>
+                  </p>
+                </div>
+                <div>
+                  <strong> Discription: </strong> {{ placeForCard.description }}
+                </div>
+                <mat-divider></mat-divider>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div *ngFor="let image of imagesForCard">
+            <div class="col-5">
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{ image.img_id }}</mat-card-title>
+                </mat-card-header>
+                <a href="{{ image.url }}" target="_blank">
+
+                  <img class="img-fluid card-img" src="{{ image.url }}" />
+                </a>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

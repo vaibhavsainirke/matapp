@@ -1,0 +1,53 @@
+<div class="countainer-fluid page">
+  <div class="page-heading mt-3 p-2">Component1</div>
+  <div class="page-body p-3 shadow">
+    <div class="page-contant">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 mt-2">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-card-subtitle> Component1</mat-card-subtitle>
+                <mat-card-title>Check your account</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="row justify-content-center">
+                
+
+                  <!-- <div *ngIf="accountCreated == true">You creat account successfully</div> -->
+                  <div *ngIf="dataFound == true">Welcome {{ name }}</div>
+                  <!-- <div *ngIf="dataFound == false" style="color: rgb(228, 85, 85);">You dont have account here</div> -->
+                  <div *ngIf="dataFound == false">
+                    <h1>Your Name</h1>
+                    <mat-form-field class="mx-1">
+                      <mat-label>Name</mat-label>
+                      <input matInput type="text" [(ngModel)]="name" />
+                    </mat-form-field>
+                    <button
+                      class="text-white btn mx-1"
+                      style="background-color: rgba(97, 23, 132, 0.733)"
+                      (click)="addDataToSessionStorage()"
+                    >
+                      Create
+                    </button>
+                  </div>
+
+                  <mat-divider></mat-divider>
+                </div>
+              </mat-card-content>
+              <mat-card-actions>
+                <button
+                  class="text-white btn mx-1"
+                  style="background-color: rgba(51, 180, 0, 0.733)"
+                  (click)="getDataFromSessionStroage()"
+                >
+                  Check
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,38 +1,204 @@
-<mat-nav-list class="text-white sidenav">
-  <div>
-    <img
-      class="logo img-fluid"
-      src="../../../assets/images/vaibhav.jpg"
-      alt=""
-    />
+<div
+  class="container-fluid text-white sidenav"
+  [ngClass]="{
+    bg1: sidecolor === 'color1',
+    bg2: sidecolor === 'color2',
+    bg3: sidecolor === 'color3',
+    bg4: sidecolor === 'color4',
+    bg5: sidecolor === 'color5',
+    bg6: sidecolor === 'color6',
+    bg7: sidecolor === 'color7',
+    bg8: sidecolor === 'color8',
+    bg9: sidecolor === 'color9',
+    bg10: sidecolor === 'color10',
+    bg11: sidecolor === 'color11',
+    bg12: sidecolor === 'color12',
+    bg13: sidecolor === 'color13'
+  }"
+>
+  <div class="row">
+    <div>
+      <img
+        class="logo img-fluid justify-content-center"
+        src="../../../assets/images/vaibhav.jpg"
+        alt=""
+      />
+      <div class="text-center">Profile</div>
+    </div>
   </div>
-  <div class="text-center">Profile</div>
-  <mat-divider></mat-divider>
-  <h2 class="mt-3">APPLICATION</h2>
 
-  <a mat-list-item routerLink="/home" routerLinkActive="list-item-active">
-    <span class="icon-sidenav"><mat-icon>home</mat-icon></span
-    ><span class="color-gray">Home</span>
-  </a>
-  <a mat-list-item routerLink="/album"
-    ><span class="icon-sidenav"><mat-icon>album</mat-icon></span
-    ><span class="color-gray">Album</span></a
-  >
-  <a mat-list-item routerLink="/library">
-    <span class="icon-sidenav"><mat-icon>photo</mat-icon></span
-    ><span class="color-gray">Library</span>
-  </a>
-  <a mat-list-item routerLink="/music"
-    ><span class="icon-sidenav"><mat-icon>lyrics</mat-icon></span
-    ><span class="color-gray">Music</span></a
-  >
-  <a mat-list-item routerLink="/autocomplete">
-    <span class="icon-sidenav" ><mat-icon>style</mat-icon></span><span class="color-gray">AutoComplete</span>
-  </a>
-  <a mat-list-item routerLink="/fromevent">
-    <span class="color-gray" ><mat-icon>event</mat-icon>FromEvent</span>
-  </a>
-  <a mat-list-item routerLink="/rating">
-    <span class="color-gray" ><mat-icon>star</mat-icon>Rating</span>
-  </a>
-</mat-nav-list>
+  <mat-divider></mat-divider>
+  <h2 class="mt-3 px-4">APPLICATION</h2>
+  <div class="row menu-container">
+    <div class="col-12 menu-container-inner">
+      <ul class="menu">
+        <li>
+          <a
+            mat-list-item
+            routerLink="/home"
+            routerLinkActive="list-item-active"
+            (click)="changeColor('color1')"
+            (click)="sidenavColor('color1')"
+          >
+            <span class="icon-sidenav"><mat-icon>home</mat-icon></span
+            ><span class="color-gray">Home</span>
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/album"
+            (click)="changeColor('color2')"
+            (click)="sidenavColor('color2')"
+            ><span class="icon-sidenav"><mat-icon>album</mat-icon></span
+            ><span class="color-gray">Album</span></a
+          >
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/c1"
+            (click)="changeColor('color9')"
+            (click)="sidenavColor('color9')"
+            ><span class="icon-sidenav"
+              ><mat-icon>account_circle </mat-icon></span
+            ><span class="color-gray"> Check Account</span></a
+          >
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/c2"
+            (click)="changeColor('color7')"
+            (click)="sidenavColor('color7')"
+            ><span class="icon-sidenav"
+              ><mat-icon> manage_accounts</mat-icon></span
+            ><span class="color-gray"> Account detail </span></a
+          >
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/library"
+            (click)="changeColor('color3')"
+            (click)="sidenavColor('color3')"
+          >
+            <span class="icon-sidenav"><mat-icon>photo</mat-icon></span
+            ><span class="color-gray">Library</span>
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/music"
+            (click)="changeColor('color4')"
+            (click)="sidenavColor('color4')"
+            ><span class="icon-sidenav"><mat-icon>lyrics</mat-icon></span
+            ><span class="color-gray">Music</span></a
+          >
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/autocomplete"
+            (click)="changeColor('color5')"
+            (click)="sidenavColor('color5')"
+          >
+            <span class="icon-sidenav"><mat-icon>style</mat-icon></span
+            ><span class="color-gray">AutoComplete</span>
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/fromevent"
+            (click)="changeColor('color6')"
+            (click)="sidenavColor('color6')"
+          >
+            <span class="color-gray"><mat-icon>event</mat-icon>FromEvent</span>
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/rating"
+            (click)="changeColor('color7')"
+            (click)="sidenavColor('color7')"
+          >
+            <span class="color-gray"><mat-icon>star</mat-icon>Rating</span>
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/charts"
+            (click)="changeColor('color8')"
+            (click)="sidenavColor('color8')"
+          >
+            <span class="color-gray"><mat-icon>star</mat-icon>Charts</span>
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/line-chart"
+            (click)="changeColor('color9')"
+            (click)="sidenavColor('color9')"
+          >
+            <span class="color-gray"
+              ><mat-icon>ssid_chart</mat-icon>Line-Charts</span
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/bar-chart"
+            (click)="changeColor('color10')"
+            (click)="sidenavColor('color10')"
+          >
+            <span class="color-gray"
+              ><mat-icon>bar_chart</mat-icon>Bar-Charts</span
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/pie-chart"
+            (click)="changeColor('color11')"
+            (click)="sidenavColor('color11')"
+          >
+            <span class="color-gray"
+              ><mat-icon>pie_chart</mat-icon>Pie-Charts</span
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/doughnut-chart"
+            (click)="changeColor('color12')"
+            (click)="sidenavColor('color12')"
+          >
+            <span class="color-gray"
+              ><mat-icon>donut_large</mat-icon>doughnut_Charts</span
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            mat-list-item
+            routerLink="/selectbox"
+            (click)="changeColor('color13')"
+            (click)="sidenavColor('color13')"
+          >
+            <span class="color-gray"
+              ><mat-icon>donut_large</mat-icon>Select Box</span
+            >
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

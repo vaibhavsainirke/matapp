@@ -21,8 +21,4 @@ export class FromeventComponent implements AfterViewInit {
     });
   }
 
-
-
-
-
 }

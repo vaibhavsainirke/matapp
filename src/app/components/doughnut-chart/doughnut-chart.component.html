@@ -1,0 +1,18 @@
+<div class="countainer-fluid page ">
+    <div class="page-heading mt-3 p-2">Bar chart</div>
+    <div class="page-body p-3 position-relative shadow">
+        <div class="page-contant position-absolute">
+            <div class="chart-wrapper">
+                <canvas
+                  width="300px"
+                  height="300px"
+                  baseChart
+                  [type]="'doughnut'"
+                  [data]="doughnutChartData"
+                  [options]="doughnutChartOptions"
+                >
+                </canvas>
+              </div>
+        </div>
+    </div>
+</div>
